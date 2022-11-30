@@ -7,6 +7,7 @@ extern uint16_t reg[R_COUNT];
 
 int running = 1;
 int main(int argc, const char * argv[]) {
+    setup();
     load_args(argc,argv);
     reg[R_COND] = FL_ZRO;
 
